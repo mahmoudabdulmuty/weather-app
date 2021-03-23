@@ -1,41 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <title>Ninja Weather</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>weather-app</title>
+  </head>
 
-    <div class="container my-5 mx-auto">
+  <body>
+    <section class="container my-5 mx-auto">
+      <h1 class="text-center text-muted my-4">Weather App</h1>
+      <form class="change-location text-center text-muted my-4">
+        <label for="location">Type Your Location</label>
+        <input class="form-control mt-3" type="text" name="location" />
+      </form>
 
-        <h1 class="text-muted text-center my-4">Weather Ninja</h1>
-    
-        <form class="change-location my-4 text-center text-muted">
-          <label for="city">Enter a location for weather information</label>
-          <input type="text" name="city" class="form-control p-4">
-        </form>
-        
-        <div class="card shadow-lg rounded">
-          <img src="https://via.placeholder.com/400x300" class="time card-img-top">
-          <div class="icon bg-light mx-auto text-center">
-            <!-- icon here later -->
-          </div>
-          <div class="text-muted text-uppercase text-center details">
-            <h5 class="my-3">City name</h5>
-            <div class="my-3">Weather condition</div>
-            <div class="display-4 my-4">
-              <span>temp</span>
-              <span>&deg;C</span>
-            </div>
-          </div>
+      <div class="card lg-shadow rounded">
+        <img class="time card-img-top" src="https://via.placeholder.com/400x300" />
+        <div class="icon bg-light text-center mx-auto"></div>
+        <div class="details text-muted text-center text-uppercase">
+          <p class="my-3">City Name</p>
+          <p class="my-3">Weather Conditions</p>
+          <p class="my-3 display-4">
+            <span>temp</span>
+            <span>&deg;C</span>
+          </p>
         </div>
-        
-      </div> 
-  
-  <script src="scripts/forecast.js"></script>
-  <script src="scripts/app.js"></script>
-</body>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
 </html>
