@@ -17,16 +17,19 @@
   <body>
     <section class="container my-5 mx-auto">
       <h1 class="text-center text-muted my-4">Weather App</h1>
-      <form class="change-location text-center text-muted my-4">
+      <form class="text-center text-muted my-4">
         <label for="location">Type Your Location</label>
         <input class="form-control mt-3" type="text" name="location" />
       </form>
 
-      <div class="card lg-shadow rounded">
+      <div class="card lg-shadow rounded d-none">
         <img class="time card-img-top" src="https://via.placeholder.com/400x300" />
-        <div class="icon bg-light text-center mx-auto"></div>
+        <div class="icon bg-light text-center mx-auto">
+          <img src="">
+        </div>
         <div class="details text-muted text-center text-uppercase">
           <p class="my-3">City Name</p>
+          <p class="my-3 lead">Country Name</p>
           <p class="my-3">Weather Conditions</p>
           <p class="my-3 display-4">
             <span>temp</span>
