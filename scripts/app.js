@@ -24,12 +24,7 @@ const updateUI = (data) => {
   }
 
   // update day/night img
-  let timeSrc = "";
-  if (weatherDets.IsDayTime) {
-    timeSrc = "img/day.svg";
-  } else {
-    timeSrc = "img/night.svg";
-  }
+  let timeSrc = weatherDets.IsDayTime ? "img/day.svg" : "img/night.svg";
   time.setAttribute("src", timeSrc);
 
   // update icon
