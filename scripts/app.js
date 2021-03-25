@@ -49,4 +49,16 @@ searchForm.addEventListener("submit", (e) => {
   updateCity(seachValue)
     .then((data) => updateUI(data))
     .catch((err) => console.log(err));
+  
+  //set localStorage   
+  localStorage.setItem('seachValue',seachValue);
 });
+
+if(localStorage.getItem('seachValue')){
+   updateCity(localStorage.getItem('seachValue'))
+    .then((data) => updateUI(data))
+    .catch((err) => console.log(err));
+   }
+
+
+
